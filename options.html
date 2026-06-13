@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PFH Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <h1>Privacy Firewall Settings</h1>
+  <section>
+    <h2>Tracker Blocking</h2>
+    <p>EasyList loaded: <span id="ruleCount">Loading...</span> rules</p>
+    <button id="refreshRules">Refresh Tracker Rules</button>
+  </section>
+  <section>
+    <h2>Advanced Spoofing</h2>
+    <label><input type="checkbox" id="spoofUserAgent"> Enable User-Agent Spoofing</label>
+    <label><input type="checkbox" id="spoofGeolocation"> Enable Geolocation Spoofing (note: IP-based geolocation may override)</label>
+    <label><input type="checkbox" id="aiNoiseInjection"> Enable AI Noise Injection</label>
+  </section>
+  <section>
+    <h2>Flagged Logs</h2>
+    <div id="no-logs" style="display: none;">No trackers flagged yet.</div>
+    <ul id="logList"></ul>
+    <button id="clearLogs">Clear Logs</button>
+  </section>
+  <script src="options.js"></script>
+</body>
+</html>

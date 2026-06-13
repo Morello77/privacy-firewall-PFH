@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PFH Popup</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h2>Privacy Firewall</h2>
+  <div class="toggle-section">
+    <div class="toggle-item">
+      <input type="checkbox" id="autoBlock">
+      <label for="autoBlock">Auto-block Trackers</label>
+      <span class="tooltip">?
+        <span class="tooltiptext">Blocks known trackers using EasyList rules.</span>
+      </span>
+    </div>
+    <div class="toggle-item">
+      <input type="checkbox" id="spoofUserAgent">
+      <label for="spoofUserAgent">Spoof User-Agent</label>
+      <span class="tooltip">?
+        <span class="tooltiptext">Changes browser fingerprint to avoid tracking.</span>
+      </span>
+    </div>
+    <div class="toggle-item">
+      <input type="checkbox" id="spoofGeolocation">
+      <label for="spoofGeolocation">Spoof Geolocation</label>
+      <span class="tooltip">?
+        <span class="tooltiptext">Fakes location to a random point in the Atlantic Ocean (note: IP-based geolocation may override).</span>
+      </span>
+    </div>
+    <div class="toggle-item">
+      <input type="checkbox" id="aiNoiseInjection">
+      <label for="aiNoiseInjection">AI Noise Injection</label>
+      <span class="tooltip">?
+        <span class="tooltiptext">Adds random noise to AI inputs to prevent data collection.</span>
+      </span>
+    </div>
+  </div>
+  <button id="openOptions">Advanced Settings</button>
+  <h3>Recent Flagged Requests</h3>
+  <div id="requests">
+    <div id="no-requests" class="alert" style="display: none;">No trackers flagged yet.</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

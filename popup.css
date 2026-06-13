@@ -1,0 +1,115 @@
+body {
+  width: 350px;
+  min-height: 400px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  padding: 15px;
+  margin: 0;
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 1.4em;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+.toggle-section {
+  margin-bottom: 20px;
+}
+.toggle-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s;
+}
+.toggle-item:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.toggle-item label {
+  flex: 1;
+  cursor: pointer;
+  font-size: 0.95em;
+  color: #555;
+}
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #3498db;
+  cursor: pointer;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+button:hover {
+  background-color: #2980b9;
+}
+button:active {
+  transform: scale(0.98);
+}
+h3 {
+  font-size: 1.1em;
+  color: #34495e;
+  margin: 15px 0 10px;
+}
+#requests {
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+.alert, #no-requests {
+  background-color: #ffebee;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-size: 0.85em;
+  color: #c0392b;
+  word-break: break-word;
+  transition: background-color 0.3s;
+}
+.alert:hover, #no-requests:hover {
+  background-color: #ffcdd2;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.8em;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
