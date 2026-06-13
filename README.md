@@ -1,5 +1,11 @@
 # Privacy Firewall for Humans (PFH)
 
+## Screenshots
+
+![Popup Interface](screenshot-popup.png)
+
+![Flagged Requests](screenshot-flagged.png)
+
 A lightweight, consumer-focused Chrome extension that acts as a **personal firewall for your data**.
 
 Instead of blocking network ports, it blocks data leaks from websites, trackers, and AI apps.
